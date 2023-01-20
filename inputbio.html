@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Bio Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Input Bio Data Here</h1>
+<form id="user_form" onsubmit="return doForm()">
+    <label>Student Name<span style="color:red;">"</span>:</label><br/>
+    <input type="text" id="txtName" placeholder="Student Name" name="Name" value="name" required><br>
+
+    <label>Email<span style="color:red;">"</span>:</label><br>
+    <input type="email" id="txtEmail" placeholder="johndoe@email.com" name="array[]" value="email"><br>
+
+    <label>Matric No<span style="color:red;">"</span>:</label><br/>
+    <input type="text" placeholder="matric no" name="array[]" value="mat no"><br>
+
+    <label>Programme<span style="color:red;">"</span>:</label><br/>
+    <input type="text" id="txtMat" placeholder="programme" name="array[]" value="programme"><br>
+
+    <label>What files are you sending?</label><br/>
+     <INPUT type="file" name="name_of_files"><br/>
+
+    <label for="level">Choose your level:</label>
+    <select name="level" id="level">
+        <option value="100 Lvl">100 Lvl</option>
+        <option value="200 Lvl">200 Lvl</option>
+        <option value="300 Lvl">300 Lvl</option>
+        <option value="400 Lvl">400 Lvl</option>
+        <option value="500 Lvl">500 Lvl</option>
+    </select>
+<br/>
+    <br><br/>
+    <input type="submit" value="SUBMIT!"/>
+    <br>
+</form>
+
+<script>
+        function testVariable() {
+            debugger
+            var strText = document.getElementById("txtName").value;
+            var strText1 = document.getElementById("txtEmail").value;
+            document.getElementById("p1").innerHTML = strText;
+            document.getElementById("p2").innerHTML = strText1;
+
+        }
+    </script>
+
+</body>
+</html>

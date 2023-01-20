@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the form input*/
+
+input{
+  min-width: 300px;
+  padding: 10px 15px;
+  border: 2px solid purple;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+
+input[type=text]{
+  background-color: #5c5e5f;
+}
+
+input:focus{
+  background-color: #d9fdb7;
+}
+/*
+label{
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}*/
+/* Style the header */
+header {
+  background-color: #007BD9;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 700px;  /*only for demonstration, should be removed */
+  background: blue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+
+  background-color: pink;
+  /*height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #007BD9;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+nav a{
+  font-size: 20px;
+
+}
+nav ul li{
+  margin-bottom: 20px;
+}
+a:link {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color:pink;
+  background-color: red;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+input[type=submit]{
+  padding:10px;
+  border: 3px solid purple;
+  font-size: 13px;
+
+}
